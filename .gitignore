@@ -1,3 +1,5 @@
+config/adminUser.js
+
 # Logs
 logs
 *.log

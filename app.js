@@ -8,6 +8,7 @@ var passport = require('passport');
 var jwt = require('jsonwebtoken');
 var config = require('./config/main');
 var User = require('./app/models/user');
+var adminConfig = require('./config/adminUser');
 
 // Routes
 var oauth = require('./routes/oauth');
@@ -34,7 +35,7 @@ app.get('/setup', function(req, res) {
     var admin = new User({
         name: 'Admin User',
         email: 'admin@automatr.io',
-        password: 'Newpassword2$',
+        password: adminConfig.password,
         role: 'Admin'
     });
 

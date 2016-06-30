@@ -35,7 +35,7 @@ app.get('/setup', function(req, res) {
     var admin = new User({
         name: 'Admin User',
         email: 'admin@automatr.io',
-        password: adminConfig.password,
+        password: adminConfig.defaultPassword,
         role: 'Admin'
     });
 
